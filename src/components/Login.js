@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { login } from "../features/user";
+import { login, logout } from "../features/user";
 
 export const Login = () => {
   const disPatch = useDispatch();
@@ -13,6 +13,13 @@ export const Login = () => {
         }}
       >
         Login
+      </button>
+      <button
+        onClick={() => {
+          disPatch(logout());
+        }}
+      >
+        LogOut
       </button>
     </div>
   );
