@@ -5,9 +5,9 @@ export const userSlice = createSlice({
   initialState: {
     value: {
       // value fungsi bawaan redux
-      name: "",
-      age: 0,
-      email: "",
+      name: "allbert",
+      age: 12,
+      email: "albert@gmail.com",
     },
   },
   reducers: {
