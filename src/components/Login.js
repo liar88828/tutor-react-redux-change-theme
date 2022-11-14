@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { login, logout } from "../features/user";
+import { ChangeColor } from "./ChangeColor";
 
 export const Login = () => {
   const disPatch = useDispatch();
@@ -21,6 +22,7 @@ export const Login = () => {
       >
         LogOut
       </button>
+      <ChangeColor />
     </div>
   );
 };
